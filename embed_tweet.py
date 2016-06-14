@@ -24,6 +24,9 @@ import re
 
 
 def embed_tweet(content):
+    if not content._content:
+        return
+
     content._content = re.sub(
         r'(^|[^@\w])@(\w{1,15})\b',
         '\\1<a href="https://twitter.com/\\2">@\\2</a>',
