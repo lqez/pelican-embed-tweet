@@ -23,17 +23,17 @@ from pelican import signals
 import re
 
 
-def embed_tweet(content):
-    if not content._content:
+def embed_tweet(instance):
+    if not instance._content:
         return
 
-    content._content = re.sub(
-        r'(^|[^@\w])@(\w{1,15})\b',
+    instance._content = re.sub(
+        r'(^|[^@\w])@(\w{1,15})\b[^/]',
         '\\1<a href="https://twitter.com/\\2">@\\2</a>',
         re.sub(
             r'(^|[^@\w])@(\w{1,15})/status/(\d+)\b',
             '\\1<blockquote class="twitter-tweet" align="center"><a href="https://twitter.com/\\2/status/\\3">Tweet of \\2/\\3</a></blockquote>',
-            content._content
+            instance._content
         )
     ) + '<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>'
 
