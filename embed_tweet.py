@@ -15,7 +15,7 @@ And also provides a link for Twitter username.
 
         will be replaced by a `Embedded-tweet`_ API.
 
-.. _Embedded-tweet: https://dev.twitter.com/docs/embedded-tweets
+.. _Embedded-tweet: https://developer.twitter.com/en/docs/twitter-for-websites/embedded-tweets/overview.html
 
 """
 
