@@ -19,8 +19,9 @@ And also provides a link for Twitter username.
 
 """
 
-from pelican import signals
 import re
+
+from pelican import signals
 
 
 def embed_tweet(instance):
