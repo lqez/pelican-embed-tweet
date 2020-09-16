@@ -29,7 +29,7 @@ def embed_tweet(instance):
         return
 
     instance._content = re.sub(
-        r'(^|[^/])(t)@(\w{1,15})(\b[^\/])',
+        r'(^|[^/])(t)#(\w{1,15})(\b[^\/])',
         '\\1<a href="https://twitter.com/\\3">@\\3</a>\\4',
         re.sub(
             r'(^|[^/])(t)#(\w{1,15})/status/(\d+)\b',
