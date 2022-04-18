@@ -18,8 +18,8 @@ How to use this?
 Conversion
 ----------
 
- 1. `t@username` will be replaced by `https://twitter.com/username`
- 1. `t@username/status/tweetid` will be replaced by `Embedded-tweet`
+ 1. `t#username` will be replaced by `https://twitter.com/username`
+ 1. `t#username/status/tweetid` will be replaced by `Embedded-tweet`
     - See: <https://dev.twitter.com/docs/embedded-tweets>
     - Example: <http://lqez.github.io/blog/gittipcom-and-forkorea.html>
 
